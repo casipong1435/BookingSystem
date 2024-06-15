@@ -1,0 +1,28 @@
+.add-item{
+    background-color: #a7a7a7;
+    font-size: 13rem;
+    color: white;
+}
+.add-item:hover{
+    background-color: #e07e2e;
+    cursor:pointer;
+}
+.btn-delete-item{
+    font-size: 1rem;
+    background: #d14242;
+    color: white;
+}
+.btn-delete-item:hover{
+    background: #832222;
+}
+.delete-pricing{
+    top: 0;
+    right: 0;
+}
+.edit-price{
+    top: 0;
+    left: 0;
+}
+div.archived-bg{
+    background-color: #ffec95;
+}

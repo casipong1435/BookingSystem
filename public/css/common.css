@@ -1,0 +1,93 @@
+:root{
+	--teal: #2ec1ac;
+	--teal_hover:#279e8c;
+}
+*{
+	font-family: 'Poppins', sans-serif;
+}
+.h-font{
+	font-family: 'Merienda' cursive;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type=number] {
+	-moz-appearance: textarea;
+}
+.custom-bg{
+	background-color: var(--teal);
+	border: 1px solid var(--teal);
+}
+.custom-bg:hover{
+	background-color: var(--teal-hover);
+	border-color: var(--teal-hover);
+}
+
+.h-line{
+	width: 150px;
+	margin: 0 auto;
+	height: 1.7px;
+}
+a.item-list.active{
+	color: #2b2b2b;
+	border-bottom: 2px solid #2b2b2b;
+}
+
+a.reservation-link.active{
+	color: #2b2b2b;
+	border-bottom: 2px solid #2b2b2b;
+}
+
+a.account-list.active{
+	color: #2b2b2b;
+	border-bottom: 2px solid #2b2b2b;
+}
+
+#notification{
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+}
+.fullsize{
+	z-index: 999;
+	cursor: zoom-out;
+	display: block;
+	width: 400px;
+	height: 500px;
+	max-width: 400px;
+	position: absolute;
+	left: 50%;
+	top: 80%;
+	transform: translate(-50%, -50%);
+}
+.reservation-content:hover{
+	cursor: pointer;
+	background-color: #af9174;
+}
+
+.user-content:hover{
+	cursor: pointer;
+	background-color: #f8f8f8;
+}
+.item_image{
+	box-shadow: 0 0 10px 5px #cacaca;
+	cursor: pointer;
+	transition: 0.5s ease;
+}
+.item_image:hover{
+	box-shadow: 0 0 10px 5px #ffe18d;
+}
+.delete-image{
+	top: 15px;
+	right: 30px;
+	font-size: 30px;
+	cursor: pointer;
+}
+button.reservation-btn.active{
+	background: #e6e6e6;
+	border: none;
+	color: rgb(71, 71, 71);
+}

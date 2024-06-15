@@ -1,0 +1,88 @@
+.table-holder{
+    height: 100%;
+    width: 100%;
+}
+table{
+    border-collapse: collapse;
+    background: #ffa52f;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+thead{
+    background: #0d6137;
+    height: 50px;
+    position: sticky;
+    top: 0;
+}
+th{
+    font-weight: bold;
+}
+td{
+    font-size: 15px;
+    color: black;
+}
+.search input{
+    border-radius: 10px;
+    height: 40px;
+    border: 2px solid #d6d4d4;
+    text-indent: 10px;
+}
+.search input:focus{
+    box-shadow: 0 0 5px 1px #adadad;
+    outline: none;
+}
+.search-icon{
+    right: 0;
+    top: 0;
+    margin: 10px 20px;
+    color: #a0a0a0;
+}
+.filter{
+    position: relative;
+}
+.add-user-btn{
+    color: white;
+    border: none;
+    background: #5461D4;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 40px;
+    float: left;
+}
+@media (max-width: 767px) {
+    table{
+        background: transparent;
+        box-shadow: 0 0 10px 2px #a0a0a0;
+        color: black;
+    }
+    table thead{
+        display: none;
+
+    }
+
+    table, tbody, tr, td{
+        display: block;
+        width: 100%;
+    }
+    table tr{
+        margin-bottom: 15px;
+    }
+    table td{
+        text-align: right;
+        padding:5px 5px 5px 50%;
+        position: relative;
+
+    }
+    table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}

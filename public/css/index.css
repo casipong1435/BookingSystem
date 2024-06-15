@@ -1,0 +1,20 @@
+.availability-form{
+    margin-top: -50px;
+    z-index: 2;
+    position: relative;
+}
+.pop:hover{
+    border-top-color: var(--teal) !important;
+    transform: scale(1.03);
+    transition: all 0.3s;
+}
+.box{
+    border-top-color: var(--teal) !important;
+}
+
+@media screen and (max-width: 575px) {
+    .availability-form{
+        margin-top: 25px;
+        padding: 0 35px;
+    }
+}
